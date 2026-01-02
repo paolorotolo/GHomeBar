@@ -8,20 +8,31 @@ Control your smart home devices on your Mac, without keeping a browser tab open.
   <img src="assets/demo.gif" alt="GHomeBar Demo" width="400">
 </p>
 
-## Why
-There was no way to manage my smart home devices from MacOS... until last year, when Google released a [web version](https://home.google.com) of the Google Home app. Still, it was cumbersome to open a browser every time to turn on a light.
+## ❗Why
+There was no way to manage my smart home devices from macOS... until last year, when Google released a [web version](https://home.google.com) of the Google Home app. Still, opening a browser just to turn on a light was cumbersome.
 
 GHome Bar opens a small webview pointing to home.google.com in your menu tray. Once you log in, you can manage your smart devices easily.
 
-## 🛠️ How to install
-<img src="assets/icon.png" alt="GHomeBar Demo" width="50">
+## ✨ Features
+ * Everything Google Home for Web offers, but in your menu bar:
+   * Manage Devices
+   * Start/Create Automations
+   * Control cameras
 
+<img src="assets/feature-camera.png" alt="GHomeBar Cameras" width="250">
+<img src="assets/feature-automations.png" alt="GHomeBar Devices" width="250">
+
+## 🛠️ How to install
 ### Easy: Download and run
-1. Open the [Release](https://github.com/paolorotolo/GHomeBar/releases) page
+1. Open the [Releases](https://github.com/paolorotolo/GHomeBar/releases) page
 2. Download the most recent version .dmg
 3. Run it and drag GHomeBar in Applications
 
-### Note
+<p align="center">
+<img src="assets/installer.png" alt="GHomeBar Installer" width="500">
+</p>
+
+### ⚠️ Note
 If you see a warning
 
 > "GHomeBar" is damaged and can't be opened. You should move it to the Trash.
@@ -39,7 +50,7 @@ as a workaround, you can run `xattr -cr /Applications/GHomeBar.app` and run the 
 
 *Note: You may need to enable "Outgoing Connections (Client)" in the App Sandbox settings if you are setting up a fresh project.*
 
-## How to use
+## 🏠 How to use
  1. Make sure you're enrolled in [Google Home Public Preview](https://support.google.com/googlenest/answer/12494697?hl=en) program
  2. At first start, log in to your Google account
     * If you don't see the login page, open the sidebar and tap **Go to Google Home for Web**
@@ -60,7 +71,7 @@ GHomeBar is an independent open-source project created just for fun. It is **not
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
