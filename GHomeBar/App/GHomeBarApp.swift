@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct GHomeBarApp: App {
-    @StateObject var store = WebStore(url: URL(string: "https://home.google.com")!)
+    @StateObject var store = WebViewModel(url: URL(string: "https://home.google.com")!)
     
     var body: some Scene {
         MenuBarExtra("GHomeBar", systemImage: "house.fill") {

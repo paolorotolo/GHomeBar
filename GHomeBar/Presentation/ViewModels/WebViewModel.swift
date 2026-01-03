@@ -9,7 +9,7 @@ import Foundation
 import WebKit
 import Combine
 
-class WebStore: ObservableObject {
+class WebViewModel: ObservableObject {
     @Published var isLoaded = false
 
     // The actual engine that loads the website
@@ -25,5 +25,6 @@ class WebStore: ObservableObject {
         // 3. Load the Request
         let request = URLRequest(url: url)
         self.webView.load(request)
+        isLoaded = true
     }
 }

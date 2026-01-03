@@ -9,7 +9,7 @@ import SwiftUI
 import WebKit
 
 struct ContentView: View {
-    @ObservedObject var store: WebStore
+    @ObservedObject var store: WebViewModel
         @State private var showAbout = false
     
     var body: some View {
@@ -40,7 +40,7 @@ struct ContentView: View {
                 .padding()
                 
                 Divider()
-                WebView(webView: store.webView).disabled(showAbout)
+                WebViewWrapper(webView: store.webView).disabled(showAbout)
             }
             .background(Color(nsColor: .windowBackgroundColor))
             
@@ -54,7 +54,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(store: WebStore(
+    ContentView(store: WebViewModel(
         url: URL(string: "https://home.google.com")!
     ))
 }
