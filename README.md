@@ -23,6 +23,9 @@ GHome Bar opens a small webview pointing to home.google.com in your menu tray. O
 <img src="assets/feature-automations.png" alt="GHomeBar Devices" width="250">
 
 ## 🛠️ How to install
+### Requisites
+ * macOS 13.0+
+
 ### Easy: Download and run
 1. Open the [Releases](https://github.com/paolorotolo/GHomeBar/releases) page
 2. Download the most recent version .dmg
