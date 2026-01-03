@@ -45,7 +45,6 @@ struct AboutView: View {
             Button("about.ok") {
                 withAnimation { onDismiss() }
             }
-            //.buttonStyle(.glass)
             .keyboardShortcut(.defaultAction)
         }
         .padding(20)
