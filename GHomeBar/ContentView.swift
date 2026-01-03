@@ -10,9 +10,7 @@ import WebKit
 
 struct ContentView: View {
     @ObservedObject var store: WebStore
-    
-    @State private var webPage = WebPage()
-    @State private var showAbout = false
+        @State private var showAbout = false
     
     var body: some View {
         ZStack{
@@ -42,7 +40,7 @@ struct ContentView: View {
                 .padding()
                 
                 Divider()
-                WebView(store.page)
+                WebView(webView: store.webView).disabled(showAbout)
             }
             .background(Color(nsColor: .windowBackgroundColor))
             

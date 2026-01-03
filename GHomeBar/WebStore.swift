@@ -11,11 +11,19 @@ import Combine
 
 class WebStore: ObservableObject {
     @Published var isLoaded = false
-    let page: WebPage
+
+    // The actual engine that loads the website
+    let webView: WKWebView
     
     init(url: URL) {
-        self.page = WebPage()
-        self.page.load(URLRequest(url: url))
-        isLoaded = true
+        // 1. Initialize the WebView configuration
+        let config = WKWebViewConfiguration()
+        
+        // 2. Create the WebView
+        self.webView = WKWebView(frame: .zero, configuration: config)
+        
+        // 3. Load the Request
+        let request = URLRequest(url: url)
+        self.webView.load(request)
     }
 }
